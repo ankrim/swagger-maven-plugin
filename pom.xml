@@ -86,7 +86,7 @@
         <version.maven-release-plugin>2.5.3</version.maven-release-plugin>
         <version.plexus-component-metadata>1.5.5</version.plexus-component-metadata>
         <version.maven-compiler-plugin>2.3.2</version.maven-compiler-plugin>
-        <version.maven-plugin-plugin>3.3</version.maven-plugin-plugin>
+        <version.maven-plugin-plugin>3.6.2</version.maven-plugin-plugin>
         <version.animal-sniffer-plugin>1.14</version.animal-sniffer-plugin>
         <version.maven-source-plugin>2.1.2</version.maven-source-plugin>
         <version.maven-javadoc-plugin>2.7</version.maven-javadoc-plugin>
@@ -336,27 +336,27 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>animal-sniffer-maven-plugin</artifactId>
-                <version>${version.animal-sniffer-plugin}</version>
-                <configuration>
-                    <signature>
-                        <groupId>org.codehaus.mojo.signature</groupId>
-                        <artifactId>java16-sun</artifactId>
-                        <version>1.0</version>
-                    </signature>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>check-java16-sun</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>animal-sniffer-maven-plugin</artifactId>-->
+<!--                <version>${version.animal-sniffer-plugin}</version>-->
+<!--                <configuration>-->
+<!--                    <signature>-->
+<!--                        <groupId>org.codehaus.mojo.signature</groupId>-->
+<!--                        <artifactId>java16-sun</artifactId>-->
+<!--                        <version>1.0</version>-->
+<!--                    </signature>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>check-java16-sun</id>-->
+<!--                        <phase>test</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>check</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
