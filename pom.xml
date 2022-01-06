@@ -416,66 +416,66 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>${version.maven-javadoc-plugin}</version>
-                        <configuration>
-                            <taglets>
-                                <taglet>
-                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusComponentTaglet</tagletClass>
-                                </taglet>
-                                <taglet>
-                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusConfigurationTaglet</tagletClass>
-                                </taglet>
-                                <taglet>
-                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusRequirementTaglet</tagletClass>
-                                </taglet>
-                            </taglets>
-                            <tagletArtifact>
-                                <groupId>org.codehaus.plexus</groupId>
-                                <artifactId>plexus-javadoc</artifactId>
-                                <version>${version.plexus-javadoc}</version>
-                            </tagletArtifact>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${version.maven-gpg-plugin}</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                        <version>${version.maven-javadoc-plugin}</version>-->
+<!--                        <configuration>-->
+<!--                            <taglets>-->
+<!--                                <taglet>-->
+<!--                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusComponentTaglet</tagletClass>-->
+<!--                                </taglet>-->
+<!--                                <taglet>-->
+<!--                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusConfigurationTaglet</tagletClass>-->
+<!--                                </taglet>-->
+<!--                                <taglet>-->
+<!--                                    <tagletClass>org.codehaus.plexus.javadoc.PlexusRequirementTaglet</tagletClass>-->
+<!--                                </taglet>-->
+<!--                            </taglets>-->
+<!--                            <tagletArtifact>-->
+<!--                                <groupId>org.codehaus.plexus</groupId>-->
+<!--                                <artifactId>plexus-javadoc</artifactId>-->
+<!--                                <version>${version.plexus-javadoc}</version>-->
+<!--                            </tagletArtifact>-->
+<!--                        </configuration>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>attach-javadocs</id>-->
+<!--                                <goals>-->
+<!--                                    <goal>jar</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                        <version>${version.maven-gpg-plugin}</version>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>sign-artifacts</id>-->
+<!--                                <phase>verify</phase>-->
+<!--                                <goals>-->
+<!--                                    <goal>sign</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
                 </plugins>
             </build>
         </profile>
     </profiles>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Nexus Release Repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <snapshotRepository>-->
+<!--            <id>sonatype-nexus-snapshots</id>-->
+<!--            <name>Sonatype Nexus Snapshots</name>-->
+<!--            <url>${sonatypeOssDistMgmtSnapshotsUrl}</url>-->
+<!--        </snapshotRepository>-->
+<!--        <repository>-->
+<!--            <id>sonatype-nexus-staging</id>-->
+<!--            <name>Nexus Release Repository</name>-->
+<!--            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
 </project>
